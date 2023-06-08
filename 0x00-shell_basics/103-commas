@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sed -E ':a; s/([^0-9a-zA-Z\/])/\\\1/g; ta' | sed -E 's/(.*)\/$/\1\//' | tr '\n' ',' && echo
+ls -1a --group-directories-first | sed -E ':a; s/([^0-9a-zA-Z\/])/\\\1/g; ta' | sed -E 's/(.*)\/$/\1\//' | LC_ALL=C sort -df | tr '\n' ',' | cat
