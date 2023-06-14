@@ -16,8 +16,8 @@ tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 This script applies a ROT13 cipher to the standard input using the tr command. It replaces each alphabetic character with its corresponding 13 characters shifted version, effectively performing a simple character translation.
 
-#!/bin/bash
-echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
+
+3-paths
 
 
 This script converts $WATER and $STIR from base-5 to decimal using tr, adds them, converts the result to octal with printf, and translates it to "bestchol" using tr. The resulting string is printed.
